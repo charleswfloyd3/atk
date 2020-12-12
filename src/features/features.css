@@ -23,11 +23,13 @@
   .interfaces {
     font-size: 24px;
     margin-bottom: 60px;
+    width: 300px;
   }
 }
 @media (max-width: 440px) {
   .interfaces {
     margin-bottom: 60px;
+    width: 300px;
   }
 }
 @media (max-width: 400px) {
