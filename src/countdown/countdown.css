@@ -22,6 +22,7 @@
   background-color: lightskyblue;
   color: white;
   font-size: 2vw;
+  position: absolute;
 }
 .signupbtn:hover {
   transform: translateY(-3px);

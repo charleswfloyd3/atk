@@ -1,7 +1,7 @@
 * {
   overflow-x: hidden;
 }
-#root {
+body {
   background-color: orangered;
   width: 100vw;
   overflow-x: hidden;
