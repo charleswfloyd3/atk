@@ -1,0 +1,93 @@
+div {
+  width: 800px;
+}
+.slogan {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 53px;
+  float: left;
+  margin-left: 3vw;
+  margin-top: 50px;
+  font-weight: 350;
+  position: relative;
+  width: fit-content;
+  color: whitesmoke;
+}
+
+@media (max-width: 969px) {
+  .slogan {
+    font-size: 52px;
+  }
+}
+@media (max-width: 890px) {
+  .slogan {
+    font-size: 51px;
+    width: 450px;
+  }
+}
+@media (max-width: 773px) {
+  .slogan {
+    font-size: 51px;
+    width: 380px;
+  }
+}
+@media (max-width: 683px) {
+  .slogan {
+    font-size: 49px;
+    width: 380px;
+  }
+}
+@media (max-width: 603px) {
+  .slogan {
+    font-size: 46px;
+    width: 380px;
+  }
+}
+@media (max-width: 583px) {
+  .slogan {
+    font-size: 43px;
+    width: 380px;
+  }
+}
+@media (max-width: 541px) {
+  .slogan {
+    font-size: 42px;
+    width: 350px;
+  }
+}
+@media (max-width: 465px) {
+  .slogan {
+    margin-top: 50px;
+    font-size: 40.8px;
+    width: 350px;
+  }
+}
+@media (max-width: 418px) {
+  .slogan {
+    font-size: 40px;
+    width: 380px;
+  }
+}
+@media (max-width: 376px) {
+  .slogan {
+    font-size: 40px;
+    width: 300px;
+  }
+}
+@media (max-width: 336px) {
+  .slogan {
+    font-size: 33px;
+    width: 380px;
+    margin-bottom: 1000px;
+  }
+}
+.comingsoon {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  float: left;
+  margin-right: 40vw;
+  margin-left: 8.25vw;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: -20px;
+}
