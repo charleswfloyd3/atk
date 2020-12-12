@@ -4,4 +4,5 @@
 #root {
   background-color: orangered;
   width: 100vw;
+  overflow-x: hidden;
 }
