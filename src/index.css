@@ -1,8 +1,13 @@
 * {
   overflow-x: hidden;
 }
+
+html,
 body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
   background-color: orangered;
   width: 100vw;
-  overflow-x: hidden;
 }
