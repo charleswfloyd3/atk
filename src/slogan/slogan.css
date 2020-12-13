@@ -32,34 +32,40 @@ div {
     width: 380px;
   }
 }
+@media (max-width: 743px) {
+  .slogan {
+    font-size: 45px;
+    width: 380px;
+  }
+}
 @media (max-width: 683px) {
-  .slogan {
-    font-size: 49px;
-    width: 380px;
-  }
-}
-@media (max-width: 603px) {
-  .slogan {
-    font-size: 46px;
-    width: 380px;
-  }
-}
-@media (max-width: 583px) {
   .slogan {
     font-size: 43px;
     width: 380px;
   }
 }
+@media (max-width: 603px) {
+  .slogan {
+    font-size: 40px;
+    width: 380px;
+  }
+}
+@media (max-width: 583px) {
+  .slogan {
+    font-size: 40px;
+    width: 380px;
+  }
+}
 @media (max-width: 541px) {
   .slogan {
-    font-size: 42px;
+    font-size: 40px;
     width: 350px;
   }
 }
 @media (max-width: 465px) {
   .slogan {
     margin-top: 50px;
-    font-size: 40.8px;
+    font-size: 40px;
     width: 350px;
   }
 }

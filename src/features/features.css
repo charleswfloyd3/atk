@@ -23,10 +23,15 @@
     font-size: 30px;
   }
 }
+@media (max-width: 743px) {
+  .interfaces {
+    font-size: 27px;
+  }
+}
 @media (max-width: 540px) {
   .interfaces {
     font-size: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     width: 300px;
   }
 }

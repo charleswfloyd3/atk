@@ -10,11 +10,9 @@ function App() {
           < Navbar />
           <Slogan />
     </div>
-
       <div className="bottomdiv">
         <Features />
       </div>
-
       <div className="countdown">
         <Countdown />
       </div>

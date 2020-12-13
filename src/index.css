@@ -3,12 +3,22 @@
 }
 
 body {
-  /* position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 101vh; */
   max-width: 100%;
-  /* background-image: url(trees.jpg);
-  height: 100.2vh; */
   overflow-x: hidden;
+  /* background-image: url(trees.jpg); */
+  background-size: cover;
+  /* opacity: 0.6; */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+body::before {
+  content: "";
+  background-image: url(trees.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
 }
