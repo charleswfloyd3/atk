@@ -3,12 +3,4 @@
 }
 
 body {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 101vh;
-  max-width: 100%;
-  background-image: url(trees.jpg);
-  height: 100.2vh;
-  overflow-x: hidden;
 }
