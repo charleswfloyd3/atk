@@ -8,7 +8,11 @@
   position: absolute;
   bottom: 0;
 }
-
+@media (max-width: 1270px) {
+  .interfaces {
+    font-size: 33px;
+  }
+}
 @media (max-width: 965px) {
   .interfaces {
     font-size: 35px;
