@@ -2,12 +2,13 @@
   overflow-x: hidden;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
 body {
   position: relative;
-  background-image: url(trees.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 101vh;
+  max-width: 100%;
+  background-image: url(trees.jpg);
+  height: 100.2vh;
+  overflow-x: hidden;
 }
