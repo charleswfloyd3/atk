@@ -8,10 +8,22 @@ function Countdown(){
 
  return(
     <div class="secondwebpage">
-        {/* <h1 className="signup">Sign up to recieve updates!</h1>
-        <input className="email" type="email" placeholder="enter your email address..."></input>
-        <br></br><button className="signupbtn" onClick={Signup}>Sign Up</button> */}
-
+        <form action="action_page.php">
+                <div class="container">
+                    <h2>Subscribe to our Newsletter!</h2>
+                </div>
+                <div class="container" >
+                    <input type="text" placeholder="Name" name="name" required />
+                    <input type="text" placeholder="Email address" name="mail" required />
+                    <label>
+                        <input type="checkbox"  name="subscribe" />Recieve Updates
+                    </label>
+                </div>
+                
+                <div class="container">
+                    <input type="submit" value="Subscribe" />
+                </div>
+        </form>
     </div>    
  )
 };
