@@ -1,10 +1,7 @@
 import React from 'react'
-import './countdown.css'
-function Signup(){
+import './newsletter.css'
 
-
-}
-function Countdown(){
+function Newsletter(){
 
  return(
     <div class="secondwebpage">

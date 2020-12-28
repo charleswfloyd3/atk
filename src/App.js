@@ -2,7 +2,7 @@ import './App.css';
 import Slogan from './slogan/slogan'
 import Navbar from './navbar/navbar'
 import Features from './features/features'
-import Countdown from './countdown/countdown'
+import Newsletter from './newsletter/newsletter'
 function App() {
   return (
     <div className="divv">
@@ -14,7 +14,7 @@ function App() {
         <Features />
       </div>
       <div className="countdown">
-        <Countdown />
+        <Newsletter />
       </div>
     </div>
   );
