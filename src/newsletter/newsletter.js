@@ -25,4 +25,4 @@ function Newsletter(){
  )
 };
 
-export default Countdown;
+export default Newsletter;
