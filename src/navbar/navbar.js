@@ -5,7 +5,7 @@ function Navbar(){
     return(
         <nav className="navbar">
             <p className="companyName">A T K&nbsp;&nbsp;</p>
-            <a href="#navbar"><img className="logo" src="images/letteralogo.png" ></img></a>
+            {/* <a href="#navbar"><img className="logo" src="images/letteralogo.png" ></img></a> */}
         </nav>
     )
 };
