@@ -1,50 +1,82 @@
-import React from 'react'
+import React, {useState} from 'react';
 import './newsletter.css'
+
 
 function Newsletter(){
     let name = React.useRef(null)
     let email = React.useRef(null)
-    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    let errormessage = "";
-function eventHandler(e){
-    e.preventDefault()
+    let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
+    let [nameErrorMessage, setErrorMessageName] = useState("");
+    let [emailErrorMessage, setErrorMessageEmail] = useState("");
+    
+    function eventHandler(e){
+        let userData =  {name: name.current.value,
+                email: email.current.value}
+        if(userData.email.match(mailformat) && userData.name.length > 2){
+        console.log(userData)
+        e.preventDefault()
+        return true;
 
-    let userData =  {name: name.current.value,
-            email: email.current.value}
-    if(userData.email.match(mailformat) && userData.name.length > 1){
-   
-    console.log(userData)
+        }
+
+
     }
-    else if(userData.name.length < 1){
-        return errormessage = "please enter a valid name"
+    let handleChange = () =>{
+        let userData =  {name: name.current.value,
+                email: email.current.value}
+        if(name.current.value.length <= 2){
+            setErrorMessageName("please enter a valid name")
+        }
+        else{
+            setErrorMessageName(" ")
+        }
+        if(userData.email.length > 1){
+            setErrorMessageEmail("yup")
+        }
+        if(emailErrorMessage !== ""){
+            setErrorMessageEmail("please enter a valid email address")
+            
+        }
+        else{
+            setErrorMessageEmail("")
+
+        }
     }
-    else{
-        return errormessage = "please enter a valid email address"
-    }    
-}
-console.log(name)
  return(
-
-    <div class="secondwebpage">
+    <div className="secondwebpage" >
         <form action="action_page.php">
-                <div class="container">
+                <div className="container">
                     <h1>Join our Newsletter!</h1>
                 </div>
-                <div class="container" >
-                    <input type="text" placeholder="Name" ref={name} required />
-                    <input type="text" placeholder="Email address" ref={email}required />
+                <div className="container" >
+                    <input type="text" placeholder="Name" ref={name} onChange={handleChange} required />
+                    <input type="text" placeholder="Email address" ref={email} onChange={handleChange} required />
                     <label>
                     <input type="checkbox"  name="subscribe" />Recieve Updates
                     </label>
                 </div>
                 
-                <div class="container">
-                    <h4>{errormessage}</h4>
+                <div className="container">
+                    <h4>{nameErrorMessage}{emailErrorMessage}</h4>
                     <input type="submit" onClick={eventHandler} value="Subscribe" />
                 </div>
         </form>
     </div>    
  )
 };
-
-export default Newsletter;
+let Success = () => {
+    <div>
+        hey
+    </div>
+}
+function SignUp(displayType){
+    let n = Newsletter()
+    
+    if(n == true){
+        return Success();
+    }
+    else{
+        return Newsletter();
+    }
+}
+export default SignUp;
