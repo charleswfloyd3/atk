@@ -1,4 +1,6 @@
+import { render } from '@testing-library/react';
 import React, {useState} from 'react';
+import { DeactivationsContext } from 'twilio/lib/rest/messaging/v1/deactivation';
 import './newsletter.css'
 
 
@@ -15,15 +17,11 @@ function Newsletter(){
         if(userData.email.match(mailformat) && userData.name.length > 2){
         console.log(userData)
         e.preventDefault()
-        return true;
-
         }
-
-
     }
     let handleChange = () =>{
         let userData =  {name: name.current.value,
-                email: email.current.value}
+                email:  email.current.value}
         if(name.current.value.length <= 2){
             setErrorMessageName("please enter a valid name")
         }
@@ -69,14 +67,12 @@ let Success = () => {
         hey
     </div>
 }
-function SignUp(displayType){
-    let n = Newsletter()
-    
-    if(n == true){
-        return Success();
+function SignUp(display){
+    if(display == "visible"){
+    return Newsletter();
     }
     else{
-        return Newsletter();
+        return Success();
     }
 }
 export default SignUp;
