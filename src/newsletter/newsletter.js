@@ -1,8 +1,5 @@
-import { render } from '@testing-library/react';
 import React, {useState} from 'react';
-import { DeactivationsContext } from 'twilio/lib/rest/messaging/v1/deactivation';
 import './newsletter.css'
-
 
 function Newsletter(){
     let name = React.useRef(null)
@@ -10,7 +7,9 @@ function Newsletter(){
     let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
     let [nameErrorMessage, setErrorMessageName] = useState("");
     let [emailErrorMessage, setErrorMessageEmail] = useState("");
-    
+
+
+
     function eventHandler(e){
         let userData =  {name: name.current.value,
                 email: email.current.value}
@@ -18,37 +17,45 @@ function Newsletter(){
         console.log(userData)
         e.preventDefault()
         }
+
     }
-    let handleChange = () =>{
+    let handleChangeforname = (e) =>{
         let userData =  {name: name.current.value,
                 email:  email.current.value}
-        if(name.current.value.length <= 2){
+        if(userData.name.length <= 2 && userData.email.match(mailformat) !== null ){
             setErrorMessageName("please enter a valid name")
         }
         else{
             setErrorMessageName(" ")
-        }
-        if(userData.email.length > 1){
-            setErrorMessageEmail("yup")
-        }
-        if(emailErrorMessage !== ""){
-            setErrorMessageEmail("please enter a valid email address")
             
+        }
+        e.preventDefault()
+
+    }
+    let handleChangeforemail = (e) =>{
+        let userData =  {name: name.current.value,
+                email:  email.current.value}  
+
+        if(userData.email.match(mailformat) == null && userData.name.length >= 2){
+            setErrorMessageEmail(" please enter a valid email address")
         }
         else{
             setErrorMessageEmail("")
 
+
         }
+        e.preventDefault()
+
     }
  return(
     <div className="secondwebpage" >
-        <form action="action_page.php">
+        <form action="action_page.php" >
                 <div className="container">
                     <h1>Join our Newsletter!</h1>
                 </div>
                 <div className="container" >
-                    <input type="text" placeholder="Name" ref={name} onChange={handleChange} required />
-                    <input type="text" placeholder="Email address" ref={email} onChange={handleChange} required />
+                    <input type="text" placeholder="Name" ref={name} onChange={handleChangeforname} required />
+                    <input type="text" placeholder="Email address" ref={email} onChange={handleChangeforemail} required />
                     <label>
                     <input type="checkbox"  name="subscribe" />Recieve Updates
                     </label>
@@ -56,23 +63,15 @@ function Newsletter(){
                 
                 <div className="container">
                     <h4>{nameErrorMessage}{emailErrorMessage}</h4>
+
                     <input type="submit" onClick={eventHandler} value="Subscribe" />
                 </div>
         </form>
-    </div>    
+
+  
+    </div>
+
  )
 };
-let Success = () => {
-    <div>
-        hey
-    </div>
-}
-function SignUp(display){
-    if(display == "visible"){
-    return Newsletter();
-    }
-    else{
-        return Success();
-    }
-}
-export default SignUp;
+
+export default Newsletter;
