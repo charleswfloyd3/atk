@@ -1,32 +1,33 @@
 import React, {useState} from 'react';
 import './signup.css'
 
-function SignUp(){
+
+function SignUp(props){
     let name = React.useRef(null)
     let email = React.useRef(null)
     let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
     let [nameErrorMessage, setErrorMessageName] = useState("");
     let [emailErrorMessage, setErrorMessageEmail] = useState("");
 
-
-
-    function eventHandler(e){
+    function eventHandler(props){
         let userData =  {name: name.current.value,
                 email: email.current.value}
         if(userData.email.match(mailformat) && userData.name.length > 2){
         console.log(userData)
-        e.preventDefault()
+        props.preventDefault()
+
+
         }
 
     }   
     let handleChangeforname = (e) =>{
         let userData =  {name: name.current.value,
                 email:  email.current.value}
-        if(userData.name.length <= 2 && userData.email.match(mailformat) !== null ){
+        if(userData.name.length < 3){
             setErrorMessageName("please enter a valid name")
         }
         else{
-            setErrorMessageName(" ")
+            setErrorMessageName("")
             
         }
         e.preventDefault()
@@ -35,10 +36,12 @@ function SignUp(){
     let handleChangeforemail = (e) =>{
         let userData =  {name: name.current.value,
                 email:  email.current.value}  
+        console.log(userData.email.match(mailformat))
 
-        if(userData.email.match(mailformat) == null && userData.name.length >= 2){
+        if(userData.email.match(mailformat) == null){
             setErrorMessageEmail(" please enter a valid email address")
         }
+
         else{
             setErrorMessageEmail("")
 
@@ -47,15 +50,12 @@ function SignUp(){
         e.preventDefault()
 
     }
-    // function changeMessageStatus(){
-    //     setMessageStatus("sent")
-    // }
 
  return(
     <div className="secondwebpage" >
         <form action="action_page.php" >
                 <div className="container">
-                    <h1>Join our Newsletter!</h1>
+                    <h1>Join our Newsletter!{props.status}</h1>
                 </div>
                 <div className="container" >
                     <input type="text" placeholder="Name" ref={name} onChange={handleChangeforname} required />
@@ -67,7 +67,6 @@ function SignUp(){
                 
                 <div className="container">
                     <h4>{nameErrorMessage}{emailErrorMessage}</h4>
-
                     <input type="submit" onClick={eventHandler}  value="Subscribe" />
                 </div>
         </form>

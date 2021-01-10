@@ -1,28 +1,31 @@
+
+import React, {useState} from 'react';
 import './App.css';
 import Slogan from './slogan/slogan'
 import Navbar from './navbar/navbar'
 import Features from './features/features'
-import SignUp from './signup/signup'
-import SubscribeSuccess from './SubscribeSuccess/subscribe'
-import React, {useState} from 'react';
+import Newsletter from './newsletter/newsletter'
+import SignUp from './signup/signup';
 
-function App() {
-const [messageStatus, setmessageStatus] = useState("pending")
+
+
+function App(props) {
 
   return (
     <div className="divv">
-      <div  className="topdiv">
-          < Navbar />
-          <Slogan />
-    </div>
-      <div className="bottomdiv">
-        <Features />
-      </div>
-      <div className="countdown">
-        {messageStatus === "pending" && <SignUp />}
-        {messageStatus === "sent" && <SubscribeSuccess />}
+        <div  className="topdiv">
+            <Navbar />
+            <Slogan />
+        </div>
 
-      </div>
+        <div className="bottomdiv">
+            <Features />
+        </div>
+
+        <div className="countdown">
+            <Newsletter />
+        </div>
+
     </div>
   );
 }
