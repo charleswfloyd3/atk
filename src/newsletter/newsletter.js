@@ -79,7 +79,7 @@ function Newsletter(props){
             <div className="successbox">
                 <p className="successmessage">Success!</p>
                 <img src="/images/airplane.jpg"></img>
-                <p>You subscribed at {new Date().toLocaleString()}</p>
+                <p>You subscribed on {new Date().toLocaleString()}</p>
                 <p>Your email will be arriving in a couple minutes!</p>
             </div>
         </div>
