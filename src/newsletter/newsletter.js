@@ -80,7 +80,7 @@ function Newsletter(props){
                 <p className="successmessage">Success!</p>
                 <img src="/images/airplane.jpg"></img>
                 <p>You subscribed at {new Date().toLocaleString()}</p>
-                <p>Your email will be arriving in the couple minutes!</p>
+                <p>Your email will be arriving in a couple minutes!</p>
             </div>
         </div>
   
