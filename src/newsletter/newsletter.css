@@ -1,0 +1,176 @@
+/* .signup {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 50px;
+  margin-top: 88vh;
+  color: white;
+  font-weight: 400;
+  margin-left: 2vw;
+  position: absolute;
+  z-index: 1;
+  width: fit-content;
+}
+
+.signupbtn {
+  margin-top: 130vh;
+  width: 17vw;
+  height: 3.5vw;
+  margin-left: 2vw;
+  border-radius: 180vh;
+  border: none;
+  outline: none;
+  background-color: lightskyblue;
+  color: white;
+  font-size: 2vw;
+  position: absolute;
+}
+.signupbtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signupbtn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signupbtn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.email {
+  width: 37vw;
+  height: 3.5vw;
+  margin-top: 112vh;
+  margin-left: 1.5vw;
+  position: absolute;
+  border-radius: 360px;
+  outline: none;
+  border: none;
+  font-size: 2vw;
+  color: black;
+  padding-left: 1vw;
+}
+
+@media (max-width: 640px) {
+  .signup {
+    font-size: 8vw;
+    width: 450px;
+  }
+  .email {
+    margin-top: 115vh;
+    width: 56vw;
+    height: 4.24vh;
+    font-size: 14px;
+  }
+  .signupbtn {
+    margin-top: 125vh;
+    width: 25vw;
+    height: 4.3vh;
+    font-size: 3.7vw;
+    overflow: hidden;
+  }
+} */
+.newsletterdiv {
+  width: 100vw;
+}
+.secondwebpage {
+  margin-top: 20vh;
+  margin-left: 20vw;
+  width: 100vw;
+  /* border: 2px solid transparent;
+  border-radius: 15px; */
+}
+.secondwebpagehidden {
+  display: none;
+}
+form {
+  width: 70vw;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 55vw;
+}
+h2 {
+  font-size: 35px;
+  margin-left: 1vw;
+  margin-top: 40px;
+  font-weight: 700;
+}
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #87cefa;
+  width: 15vw;
+  margin-left: 19vw;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+input[type="submit"]:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+input[type="submit"]:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  color: red;
+  margin-top: -10px;
+}
+.successbox {
+  height: 320px;
+  width: 100vw;
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 55vw;
+  overflow-y: hidden;
+}
+.successmessage {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 10vh;
+}
+p {
+  text-align: center;
+}
+img {
+  height: 100px;
+  background: transparent;
+  margin-left: 23vw;
+  margin-top: -50px;
+}

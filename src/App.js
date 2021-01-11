@@ -5,7 +5,7 @@ import Slogan from './slogan/slogan'
 import Navbar from './navbar/navbar'
 import Features from './features/features'
 import Newsletter from './newsletter/newsletter'
-import SignUp from './signup/signup';
+
 
 
 
