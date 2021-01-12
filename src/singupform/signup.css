@@ -126,11 +126,11 @@ button {
   text-decoration: underline;
 }
 .nextbutton3 {
-  margin-left: 100px;
+  margin-left: 72px;
   margin-right: 10px;
   height: 35px;
   margin-top: 180px;
-  width: 140px;
+  width: 190px;
   border-radius: 90px;
   outline: none;
   border: 2.5px solid white;
@@ -138,4 +138,7 @@ button {
   background-color: inherit;
   color: white;
   font-size: 23px;
+}
+input:focus {
+  outline: none;
 }

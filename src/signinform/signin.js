@@ -1,7 +1,7 @@
 import react from 'react'
 import './signin.css'
 
-function SignIn() {
+function Signin() {
   return (
     <div>
     <form className="signinformemail">
@@ -28,4 +28,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default Signin;

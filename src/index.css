@@ -9,7 +9,7 @@ body {
   background-size: cover;
   /* opacity: 0.6; */
   background-repeat: no-repeat;
-  height: 100vh;
+  height: fit-content;
 }
 body::before {
   content: "";

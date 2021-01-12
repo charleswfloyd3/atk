@@ -29,7 +29,7 @@ function SignUp() {
       {/* <input className="inputfieldpassword" placeholder='Enter password'></input> */}
       <div className="bottomofform">
         <p className="alreadyhaveanaccount2">Already have an account?</p>
-        <button className="nextbutton3">Next</button>
+        <button className="nextbutton3">Sign Up</button>
       </div>
 
     </form>

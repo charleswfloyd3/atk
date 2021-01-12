@@ -1,9 +1,9 @@
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 .signinformemail {
+  z-index: 100;
   border: 4px solid whitesmoke;
   width: 453px;
   margin: auto;
@@ -80,4 +80,7 @@
   height: 500px;
   background-color: #87cefa;
   color: white;
+}
+input:focus {
+  outline: none;
 }
