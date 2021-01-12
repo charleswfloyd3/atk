@@ -38,6 +38,26 @@
   background-size: cover;
   opacity: 0.95;
 }
-.loginandsignuppage {
-  background-color: black;
+
+* {
+  overflow-x: hidden;
 }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+}
+/* body::before {
+  content: "";
+  background-image: url(trees.jpg);
+  background-size: cover;
+  position: none;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+} */
