@@ -2,13 +2,17 @@
   color: black;
   opacity: 1;
 }
-.signindiv {
-  margin: auto auto auto 30vw;
+/* body {
   background-color: black;
+} */
+.signindiv {
+  background-color: #000000;
+  width: 100vw;
 }
 .signinformemail {
   border: 4px solid black;
   width: 453px;
+  margin-left: 500px;
 
   margin-top: 50px;
   height: 500px;

@@ -13,7 +13,7 @@ import Landingpage from './landingpage/landingpage';
 function App(props) {
 
   return (
-<div>
+
  <Switch>
     <Route exact path="/">
       <Landingpage />
@@ -22,7 +22,7 @@ function App(props) {
       <Signin />
     </Route>
 </Switch>
-</div>
+
   );
 }
 

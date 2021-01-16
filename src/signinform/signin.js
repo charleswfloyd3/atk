@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import './signin.css'
 
 function Signin() {
@@ -8,13 +8,12 @@ function Signin() {
         <h1 className="companyname">A T K</h1>
         <p className="signintitle">Sign in</p>
         <input className="inputfieldemail" placeholder='Enter email'></input>
-        {/* <input className="inputfieldpassword" placeholder='Enter password'></input> */}
         <div className="bottomofform">
         <p className='createaccount'>Create account</p>
         <button className="nextbutton">Next</button>
         </div>
     </form>
-    {/* <form className="signinformpassword">
+     {/* <form className="signinformpassword">
         <h1 className="companyname">A T K</h1>
         <p className="signintitle">Sign in</p>
         <input className="inputfieldemail" placeholder='Enter password'></input>
