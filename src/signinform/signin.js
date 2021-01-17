@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './signin.css'
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import NavbarForms from '../navbarforforms/navbarforms';
 
 function Signin() {
   
@@ -28,6 +29,7 @@ function Signin() {
   }
   return (
     <div className="signindiv">
+      <NavbarForms />
     <form className={classStatus ? "signinformemail" : "signindivhidden"}>
         <h1 className="companyname">A T K</h1>
         <p className="signintitle">Sign in</p>
