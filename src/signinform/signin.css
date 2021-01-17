@@ -1,20 +1,22 @@
 ::placeholder {
-  /* color: black; */
   opacity: 1;
 }
 /* body {
   background-color: black;
 } */
 .signindiv {
-  background-color: #000000;
+  background-image: url("../trees.jpg");
+
   width: 100vw;
   height: 100vh;
 }
 .signindivhidden {
   display: none;
-  margin: auto;
-  margin-top: 7vh;
-  height: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  top: 50%;
+  height: 500px;
   background-color: #87cefa;
   color: white;
   border: 2px solid transparent;
@@ -22,9 +24,12 @@
 }
 .signinformemail {
   width: 453px;
-  margin: auto;
-  margin-top: 7vh;
-  height: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  top: 50%;
+  margin-bottom: 10px;
+  height: 500px;
   background-color: #87cefa;
   color: white;
   border: 8px solid white;
@@ -94,9 +99,11 @@
 }
 .signinformpassword {
   width: 453px;
-  margin: auto;
-  margin-top: 7vh;
-  height: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  top: 50%;
+  height: 500px;
   background-color: #87cefa;
   color: white;
   border: 8px solid white;

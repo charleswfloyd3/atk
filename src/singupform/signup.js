@@ -1,4 +1,5 @@
 import react from "react";
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import "./signup.css";
 
 function Signup() {
@@ -9,14 +10,14 @@ function Signup() {
       <p className="signuptitle">Sign up</p>
       <div className="guestbrowse">
       <p className="or">or</p>
-      <p className="browseas">browse as a</p>
-      <button>GUEST</button>
+      <p className="browseas">browse as </p>
+      <button className="guestbutton">GUEST</button>
       </div>
       {/* <input className="inputfieldname" placeholder="Enter your name"></input> */}
       <input className="inputfieldemail" placeholder="Enter email"></input>
       {/* <input className="inputfieldpassword" placeholder='Enter password'></input> */}
       <div className="bottomofform">
-        <p className="alreadyhaveanaccount">Already have an account?</p>
+        <p className="alreadyhaveanaccount"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/login">Already have an account?</Link></p>
         <button className="nextbutton2">Next</button>
       </div>
     </form>

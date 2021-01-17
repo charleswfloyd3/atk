@@ -10,6 +10,7 @@ function Signin() {
   let setClassStatuss = () =>{
     if(classStatus === false){
       setClassStatus(true)
+      email.current.value = ""
     }
     else{
       setClassStatus(false)
