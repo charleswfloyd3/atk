@@ -1,7 +1,6 @@
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   opacity: 1; /* Firefox */
-  background-image: url("../trees.jpg");
 }
 .signupform {
   border: 4px solid whitesmoke;

@@ -18,6 +18,10 @@ function Signup() {
       setClassStatuss(false)
     } 
   }
+
+  let SaveNewUserData = () =>{
+    
+  }
   return (
     <div className="signindiv">
     <NavbarForms />

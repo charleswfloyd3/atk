@@ -5,10 +5,10 @@
   background-color: black;
 } */
 .signindiv {
-  background-image: url("../trees.jpg");
-
+  background-image: url("../redwoods.jpg");
+  background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 97.57vh;
 }
 .signindivhidden {
   display: none;

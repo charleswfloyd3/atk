@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Signin from './signinform/signin';
 import Signup from './singupform/signup'
 import Landingpage from './landingpage/landingpage';
-
+import Contact from "./contact/contact";
 
 function App(props) {
 
@@ -21,6 +21,9 @@ function App(props) {
     </Route>
     <Route path="/signup">
       <Signup />
+    </Route>
+    <Route path="/contact">
+      <Contact />
     </Route>
 </Switch>
 
