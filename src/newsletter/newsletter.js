@@ -26,6 +26,8 @@ function Newsletter(props){
 
     }   
     let handleChangeforname = (e) =>{
+        e.preventDefault()
+
         let userData =  {name: name.current.value,
                 email:  email.current.value}
         if(userData.name.length < 3){
@@ -35,7 +37,6 @@ function Newsletter(props){
             setErrorMessageName("")
             
         }
-        e.preventDefault()
 
     }
     let handleChangeforemail = (e) =>{
