@@ -16,15 +16,18 @@ function Contact(props) {
             <button className="home_btn_contact"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Home</Link></button>
 
         </nav>
-        <p>Contact</p>
-        <p>Developer</p>
-        <img className="me"></img>
-        <p className="aboutme"></p>
+        <p className="contacttitle">Lead Developer</p>
+        <img className="me" src="images/me.jpg"></img>
+        <p className="aboutme">Full stack software engineer living in Silicon Valley building ATK Messaging's 
+        infrastructure using React Js and Django. - Charles Floyd
+
+        </p>
+        <p className="contact">Contact</p>
         <div className="contactlink">
-            <img className="Linkedin"></img>
-            <img className="github"></img>
-            <img className="email"></img>
-            <img className="phone number"></img>
+            <li><img className="linkedin" src="images/linkednin.png"></img></li>
+            <li><img className="github" src="images/github.png"></img></li>
+            <li><img className="email" src="images/gmail.png"></img></li>
+            <li><img className="phone number" src="images/iphone.png"></img></li>
         </div>
     </div>
 

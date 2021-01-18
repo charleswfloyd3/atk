@@ -144,7 +144,7 @@ input:focus {
   margin-left: 0px;
   margin-right: 19px;
   height: 35px;
-  margin-top: 165px;
+  margin-top: 135px;
   border-radius: 90px;
   outline: none;
   border: 2.5px solid white;
@@ -156,7 +156,7 @@ input:focus {
   overflow: hidden;
 }
 .createaccountfinal {
-  margin-top: 67px;
+  margin-top: 37px;
   margin-left: 10px;
   margin-right: 180px;
   /* width: fit-content; */
@@ -207,4 +207,12 @@ input:focus {
   60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+.showpass {
+  margin-top: -20px;
+  margin-right: 280px;
+}
+.showpasscheckbox {
+  margin-left: 14px;
+  margin-top: 40px;
 }

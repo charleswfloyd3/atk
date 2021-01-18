@@ -9,6 +9,7 @@ function Signin() {
   let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
   let [classStatus, setClassStatus] = useState(true);
   let [classStatusbtn, setClassStatusbtn] = useState(false);
+  let [showpass, setshowpassstatus] = useState('password');
 
   let setClassStatuss = () =>{
     if(classStatus === false){
@@ -38,6 +39,14 @@ function Signin() {
       setClassStatusbtn(false)
     } 
   }
+  let showpassword = () =>{
+    if(showpass === 'password'){
+      setshowpassstatus('')
+    }
+    else{
+      setshowpassstatus('password')
+    }
+  }
   return (
     <div className="signindiv">
       <NavbarForms />
@@ -53,7 +62,9 @@ function Signin() {
      <form className={classStatus ? "signindivhidden" : "signinformpassword"}>
         <h1 className="companyname">A T K</h1>
         <p className="signintitle">Sign in</p>
-        <input className="inputfieldemail" placeholder='Enter password'></input>
+        <input className="inputfieldemail" type={showpass} placeholder='Enter password'></input>
+        <input className="showpasscheckbox" type="checkbox" onClick={showpassword} ></input>
+        <p className="showpass">Show Password</p>
         <p className="gobackbutton" onClick={setClassStatuss}>Go back</p>
         <div className="bottomofform">
         <p className='createaccountfinal'><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/signup">Create account</Link></p>
