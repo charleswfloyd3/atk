@@ -1,11 +1,14 @@
 import React,{useState} from 'react'
 import './signin.css'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import NavbarForms from '../navbarforforms/navbarforms';
 
 function Signin() {
-  
+
   let email = React.useRef(null)
+  let password = React.useRef(null)
+  let Users = [{email:"c@gmail.com", password:"password" }]
+  
   let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
   let [classStatus, setClassStatus] = useState(true);
   let [classStatusbtn, setClassStatusbtn] = useState(false);
@@ -33,7 +36,6 @@ function Signin() {
     e.preventDefault()
     if(email.current.value.match(mailformat)){
       setClassStatusbtn(true)
-      console.log("hey")
     }
     else{
       setClassStatusbtn(false)
@@ -45,6 +47,21 @@ function Signin() {
     }
     else{
       setshowpassstatus('password')
+    }
+  }
+
+  let signin = (e) =>{
+    e.preventDefault()
+    let userData =  {email: email.current.value,
+      password: password.current.value}
+                
+                console.log(userData)
+                console.log(Users)
+    if(userData === Users[0]){
+      console.log("success")
+    }
+    else{
+      console.log("fail")
     }
   }
   return (
@@ -62,13 +79,13 @@ function Signin() {
      <form className={classStatus ? "signindivhidden" : "signinformpassword"}>
         <h1 className="companyname">A T K</h1>
         <p className="signintitle">Sign in</p>
-        <input className="inputfieldemail" type={showpass} placeholder='Enter password'></input>
+        <input className="inputfieldemail" type={showpass} ref={password} placeholder='Enter password'></input>
         <input className="showpasscheckbox" type="checkbox" onClick={showpassword} ></input>
         <p className="showpass">Show Password</p>
         <p className="gobackbutton" onClick={setClassStatuss}>Go back</p>
         <div className="bottomofform">
         <p className='createaccountfinal'><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/signup">Create account</Link></p>
-        <button className="nextbuttonfinal" >Sign In</button>
+        <button className="nextbuttonfinal" onClick={signin} >Sign In</button>
         </div>
      </form>
     </div>
