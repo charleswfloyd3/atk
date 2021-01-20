@@ -7,8 +7,10 @@ import Signin from './signinform/signin';
 import Signup from './singupform/signup'
 import Landingpage from './landingpage/landingpage';
 import Contact from "./contact/contact";
+import Messaging from "./messagingservice/messagingservice"
 
 function App(props) {
+  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "Will" }]
 
   return (
 
@@ -24,6 +26,9 @@ function App(props) {
     </Route>
     <Route path="/contact">
       <Contact />
+    </Route>
+    <Route path="/messaging">
+      <Messaging name={Users[0].name}/>
     </Route>
 </Switch>
 

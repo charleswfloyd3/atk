@@ -5,14 +5,15 @@ import NavbarForms from '../navbarforforms/navbarforms';
 
 function Signin() {
 
-  let email = React.useRef(null)
-  let password = React.useRef(null)
-  let Users = [{email:"c@gmail.com", password:"password" }]
-  
-  let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
-  let [classStatus, setClassStatus] = useState(true);
-  let [classStatusbtn, setClassStatusbtn] = useState(false);
-  let [showpass, setshowpassstatus] = useState('password');
+  const email = React.useRef(null)
+  const password = React.useRef(null)
+  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "Will" }]
+
+  const mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
+  const [classStatus, setClassStatus] = useState(true);
+  const [classStatusbtn, setClassStatusbtn] = useState(false);
+  const [showpass, setshowpassstatus] = useState('password');
+  const [finalbtnState, setFinalbtnState] = useState(false);
 
   let setClassStatuss = () =>{
     if(classStatus === false){
@@ -25,7 +26,7 @@ function Signin() {
   }
   let Next = (e) => {
     e.preventDefault()
-    if(email.current.value.match(mailformat)){
+    if(validateEmailInfo()[0]){
       setClassStatuss()
     }
     else{
@@ -34,7 +35,7 @@ function Signin() {
 
   let buttonstatus = (e) => {
     e.preventDefault()
-    if(email.current.value.match(mailformat)){
+    if(validateEmailInfo()[0]){
       setClassStatusbtn(true)
     }
     else{
@@ -49,21 +50,36 @@ function Signin() {
       setshowpassstatus('password')
     }
   }
+  let validateEmailInfo = (props) =>{
+const userData =  {email: email.current.value,
+      password: password.current.value} 
+    for(let i=0; i < Users.length; i++){
+      if(Users[i].email === userData.email){
+        return [true, i]
+      }
+      else{
+        return false
+      }
+    }
 
-  let signin = (e) =>{
-    e.preventDefault()
-    let userData =  {email: email.current.value,
-      password: password.current.value}
-                
-                console.log(userData)
-                console.log(Users)
-    if(userData === Users[0]){
-      console.log("success")
-    }
-    else{
-      console.log("fail")
-    }
   }
+  let validatePasswordInfo = (e) =>{
+    e.preventDefault()
+const userData =  {email: email.current.value,
+      password: password.current.value} 
+      if(Users[validateEmailInfo()[1]].password === userData.password){
+
+
+        setFinalbtnState(true)
+      }
+      else{
+      }
+    }
+  const preventDefaultfunction = (e) =>{
+    return e.preventDefault()
+  }
+  
+
   return (
     <div className="signindiv">
       <NavbarForms />
@@ -79,13 +95,14 @@ function Signin() {
      <form className={classStatus ? "signindivhidden" : "signinformpassword"}>
         <h1 className="companyname">A T K</h1>
         <p className="signintitle">Sign in</p>
-        <input className="inputfieldemail" type={showpass} ref={password} placeholder='Enter password'></input>
+        <input className="inputfieldemail" onChange={validatePasswordInfo} type={showpass} ref={password} placeholder='Enter password'></input>
         <input className="showpasscheckbox" type="checkbox" onClick={showpassword} ></input>
         <p className="showpass">Show Password</p>
         <p className="gobackbutton" onClick={setClassStatuss}>Go back</p>
         <div className="bottomofform">
         <p className='createaccountfinal'><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/signup">Create account</Link></p>
-        <button className="nextbuttonfinal" onClick={signin} >Sign In</button>
+        <button className={finalbtnState ? "buttonhidden" : "nextbuttonfinalerror" } onClick={preventDefaultfunction}>Sign In</button>
+        <button className={finalbtnState ? "nextbuttonfinal" : "buttonhidden"} ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/messaging">Sign In</Link></button>
         </div>
      </form>
     </div>
