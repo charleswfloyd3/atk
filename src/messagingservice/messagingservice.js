@@ -5,8 +5,8 @@ import Typical from 'react-typical'
 import NavbarMessage from '../navbarformessaging/navbarmessage';
 
 function Messaging(props){
-    let userName = "" 
-    let messagescount = "";
+    let userName = "Hello "  + props.name 
+    let messagescount = "You have 3 new messages!";
     // const GuestorUser = (props) =>{
     //      if(finalbtnState){
     //          return [userName = "Hello " + props.name,  messagescount = " You have 3 new messages!"]
@@ -34,8 +34,9 @@ function Messaging(props){
                 
             ]}
             />
+                        <img id="airplane" src="images/airplanetransparent.png"></img>
             </h1>
-            
+
         </div>
     )
 };
