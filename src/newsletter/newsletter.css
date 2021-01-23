@@ -19,7 +19,7 @@ form {
 /* Add some padding and a grey background color to containers */
 .container {
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: white;
   width: 55vw;
 }
 h2 {
@@ -50,6 +50,7 @@ input[type="submit"] {
   margin-left: 19vw;
   color: white;
   border: none;
+  border-radius: 12px;
 }
 
 input[type="submit"]:hover {
@@ -79,21 +80,22 @@ h4 {
   height: 320px;
   width: 100vw;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: white;
   width: 55vw;
   overflow-y: hidden;
 }
 .successmessage {
   text-align: center;
   font-size: 60px;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
-p {
+.senttime,
+.messagewillbecomingsoon {
   text-align: center;
 }
-img {
+.paperairplane {
   height: 100px;
   background: transparent;
-  margin-left: 22vw;
+  margin-left: 23.4vw;
   margin-top: -50px;
 }

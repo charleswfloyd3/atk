@@ -1,0 +1,56 @@
+#navbar {
+  background-color: #292929;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  width: 98.8vw;
+  height: 40px;
+  font-weight: 100;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#navbar a {
+  margin-left: 6vw;
+  padding-top: 7.5px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  text-decoration: none;
+  color: white;
+  opacity: 87%;
+}
+
+a:hover {
+  opacity: 100%;
+}
+.dropdownbutton {
+  display: none;
+}
+@media (max-width: 770px) {
+  #navbar {
+    grid-template-columns: 1fr 0.25fr;
+  }
+  .about,
+  .git,
+  .contact,
+  .about,
+  .projects {
+    display: none;
+  }
+  .name {
+    display: block;
+  }
+  .dropdownbutton {
+    display: inline-block;
+  }
+}
+#name {
+  text-align: center;
+  margin-top: 20vh;
+  color: snow;
+  font-size: 300%;
+  font-weight: 300;
+  opacity: 100%;
+  /* z-index: 100; */
+}

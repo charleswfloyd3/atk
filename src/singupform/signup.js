@@ -54,7 +54,7 @@ function Signup() {
       <p className="signuptitle">Sign up</p>
       <p className="or">or</p>
       <p className="browseas">browse as </p>
-      <button className="guestbutton">GUEST</button>
+      <button className="guestbutton"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/messaging">GUEST</Link></button>
       <input className="inputfieldemail" ref={email} placeholder="Enter email" onChange={buttonstatus}></input>
       <div className="bottomofform">
         <p className="alreadyhaveanaccount"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/login">Already have an account?</Link></p>

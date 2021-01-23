@@ -10,7 +10,7 @@ import Contact from "./contact/contact";
 import Messaging from "./messagingservice/messagingservice"
 
 function App(props) {
-  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "Will" }]
+  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "William" }]
 
   return (
 

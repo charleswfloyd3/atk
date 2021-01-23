@@ -72,16 +72,16 @@ function Newsletter(props){
                 </div>
                 
                 <div className="container">
-                    <h4>{nameErrorMessage}{emailErrorMessage}</h4>
+                    <h4 className="errormessage">{emailErrorMessage}</h4>
                     <input type="submit" onClick={eventHandler}  value="Subscribe" />
                 </div>
         </form>
         <div className={classStatus ? "secondwebpagehidden" : 'secondwebpage'}>
             <div className="successbox">
                 <p className="successmessage">Success!</p>
-                <img src="/images/airplane.jpg"></img>
-                <p>You subscribed on {new Date().toLocaleString()}</p>
-                <p>Your email will be arriving in a couple minutes!</p>
+                <img className="paperairplane" src="/images/paper.png"></img>
+                <p className='senttime'>You subscribed on {new Date().toLocaleString()}</p>
+                <p className="messagewillbecomingsoon">Your email will be arriving in a couple minutes!</p>
             </div>
         </div>
   
