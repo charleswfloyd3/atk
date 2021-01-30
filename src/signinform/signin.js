@@ -7,7 +7,7 @@ function Signin() {
 
   const email = React.useRef(null)
   const password = React.useRef(null)
-  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "Will" }]
+  const Users = [{email:"user@gmail.com", password:"password", name: "user" }]
 
   const mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
   const [classStatus, setClassStatus] = useState(true);
