@@ -14,12 +14,13 @@ function Newsletter(props){
         setClassStatus(false)
     }
     function eventHandler(props){
+        props.preventDefault()
+
         let userData =  {name: name.current.value,
                 email: email.current.value}
         if(userData.email.match(mailformat) && userData.name.length > 2){
         console.log(userData)
         toggle()
-        props.preventDefault()
         
 
         }
