@@ -9,29 +9,28 @@ import '../navbar/navbar.css'
 function Contact(props) {
 
   return (
-    <div className="contactwebpage">
-        <nav className="navbarforcontact">
-            <p className="companyNamecontact">A T K&nbsp;&nbsp;</p>
-            <button className="about_btn_contact"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/about">About</Link></button>
-            <button className="home_btn_contact"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Home</Link></button>
+    <div className="contact-div">
+    <NavbarForms />
 
-        </nav>
-        <p className="contacttitle">Lead Developer</p>
-        <img className="me" src="images/me.jpg"></img>
-        <p className="aboutme">Full stack software engineer living in Silicon Valley building ATK Messaging's 
-        infrastructure using React Js and Django. - Charles Floyd
+  <div class="contact" id="contact">
+                <p class="contactTitle">
+                    Contact
+                </p>
+                <div class="basicinfo">
+                    <p class="nameinfo">Charles Floyd</p>
+                    <p class="cityinfo">Half Moon Bay, CA</p>
+                    <p class="phoneinfo">(650) 218-8394</p>
+                </div>
+                <ul class="contactlist">
 
-        </p>
-        <p className="contact">Contact</p>
-        <div className="contactlink">
-            <li><img className="linkedin" src="images/linkednin.png"></img></li>
-            <li><img className="github" src="images/github.png"></img></li>
-            <li><img className="email" src="images/gmail.png"></img></li>
-            <li><img className="phone number" src="images/iphone.png"></img></li>
+                    <button class="contactitem"><a href="mailto:charleswfloyd3@gmail.com">Email</a></button>
+                    <button class="contactitem2"><a href="https://www.linkedin.com/in/charles-floyd-9a38141ba/" target="_blank">LinkedIn</a></button>
+                    <button class="contactitem3"><a href="https://github.com/charleswfloyd3" target="_blank">Github</a></button>
+                    <button class="contactitem4"><a href="charlesfloyd_resume.pdf" download>Resume</a></button>
+
+                </ul>
         </div>
-    </div>
-
-  );
+        </div> 
+    );
 }
-
 export default Contact;

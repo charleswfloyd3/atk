@@ -8,9 +8,10 @@ import Signup from './singupform/signup'
 import Landingpage from './landingpage/landingpage';
 import Contact from "./contact/contact";
 import Messaging from "./messagingservice/messagingservice"
+import About from './about/about';
 
 function App(props) {
-  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "William" }]
+  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "John" }]
 
   return (
 
@@ -26,6 +27,9 @@ function App(props) {
     </Route>
     <Route path="/contact">
       <Contact />
+    </Route>
+        <Route path="/about">
+      <About />
     </Route>
     <Route path="/messaging">
       <Messaging name={Users[0].name}/>
