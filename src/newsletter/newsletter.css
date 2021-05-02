@@ -1,101 +1,102 @@
 .newsletterdiv {
-  width: 100vw;
+	width: 100vw;
 }
 .secondwebpage {
-  margin-top: 20vh;
-  margin-left: 20vw;
-  width: fit-content;
+	margin: 0 auto;
+	margin-top: 20vh;
+	width: fit-content;
 
-  border: 7px solid #87cefa;
-  border-radius: 30px;
+	border: 7px solid #87cefa;
+	border-radius: 30px;
 }
 .secondwebpagehidden {
-  display: none;
+	display: none;
 }
 form {
-  width: 70vw;
+	width: 70vw;
 }
 
 /* Add some padding and a grey background color to containers */
 .container {
-  padding: 20px;
-  background-color: white;
-  width: 55vw;
+	padding: 20px;
+	background-color: white;
+	width: 55vw;
 }
 h2 {
-  font-size: 35px;
-  margin-left: 1vw;
-  margin-top: 40px;
-  font-weight: 700;
+	font-size: 35px;
+	margin-left: 1vw;
+	margin-top: 40px;
+	font-weight: 700;
 }
 /* Style the input elements and the submit button */
 input[type="text"],
 input[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  margin-top: 12px;
-  display: inline-block;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 12px;
+	margin-top: 12px;
+	display: inline-block;
+	box-sizing: border-box;
 }
 
 /* Add margins to the checkbox */
 input[type="checkbox"] {
-  margin-top: 16px;
+	margin-top: 16px;
 }
 
 /* Style the submit button */
 input[type="submit"] {
-  background-color: #87cefa;
-  width: 15vw;
-  margin-left: 19vw;
-  color: white;
-  border: none;
-  border-radius: 12px;
+	background-color: #87cefa;
+	width: 80%;
+	border: 0.1px solid transparent;
+	border-radius: 12px;
+	color: white;
+	font-size: 18px;
+	margin-left: 10%;
 }
 
 input[type="submit"]:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 input[type="submit"]:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 input[type="submit"]:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-  position: absolute;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 40px;
+	display: inline-block;
+	border-radius: 100px;
+	transition: all 0.2s;
+	position: absolute;
 }
 h4 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 15px;
-  color: red;
-  margin-top: -10px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 15px;
+	color: red;
+	margin-top: -10px;
 }
 .successbox {
-  height: 320px;
-  width: 100vw;
-  padding: 20px;
-  background-color: white;
-  width: 55vw;
-  overflow-y: hidden;
+	height: 320px;
+	width: 100vw;
+	padding: 20px;
+	background-color: white;
+	width: 55vw;
+	overflow-y: hidden;
 }
 .successmessage {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 5vh;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 5vh;
 }
 .senttime,
 .messagewillbecomingsoon {
-  text-align: center;
+	text-align: center;
 }
 .paperairplane {
-  height: 100px;
-  background: transparent;
-  margin-left: 23.4vw;
-  margin-top: -50px;
+	height: 100px;
+	background: transparent;
+	margin-left: 23.4vw;
+	margin-top: -50px;
 }

@@ -7,7 +7,7 @@ import NavbarForms from '../navbarforforms/navbarforms';
 
 function Messaging(props){
     let userName = "Hello "  + props.name 
-    let messagescount = "You have 3 new messages!";
+    let messagescount = "You have 0 new messages!";
     // const GuestorUser = (props) =>{
     //      if(finalbtnState){
     //          return [userName = "Hello " + props.name,  messagescount = " You have 3 new messages!"]

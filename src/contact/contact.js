@@ -23,10 +23,10 @@ function Contact(props) {
                 </div>
                 <ul class="contactlist">
 
-                    <button class="contactitem"><a href="mailto:charleswfloyd3@gmail.com">Email</a></button>
-                    <button class="contactitem2"><a href="https://www.linkedin.com/in/charles-floyd-9a38141ba/" target="_blank">LinkedIn</a></button>
+                    <button class="contactitem"><a href="mailto:charlesfloyd.dev@gmail.com">Email</a></button>
+                    <button class="contactitem2"><a href="https://www.linkedin.com/in/charlesfloyddev/" target="_blank">LinkedIn</a></button>
                     <button class="contactitem3"><a href="https://github.com/charleswfloyd3" target="_blank">Github</a></button>
-                    <button class="contactitem4"><a href="charlesfloyd_resume.pdf" download>Resume</a></button>
+                    <button class="contactitem4"><a href="CharlesFloyd-Resume.pdf" download>Resume</a></button>
 
                 </ul>
         </div>

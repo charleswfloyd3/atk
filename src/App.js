@@ -11,7 +11,7 @@ import Messaging from "./messagingservice/messagingservice"
 import About from './about/about';
 
 function App(props) {
-  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "John" }]
+  const Users = [{email:"williamfloyd@gmail.com", password:"password", name: "Guest" }]
 
   return (
 
